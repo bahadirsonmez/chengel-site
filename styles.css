@@ -53,7 +53,8 @@ em{font-family:var(--hand);font-style:normal;font-weight:400;font-size:1.28em;li
 .nav nav.open a{opacity:1;transform:none}
 .nav nav.open a:nth-child(1){transition-delay:.08s}.nav nav.open a:nth-child(2){transition-delay:.13s}.nav nav.open a:nth-child(3){transition-delay:.18s}.nav nav.open a:nth-child(4){transition-delay:.23s}.nav nav.open a:nth-child(5){transition-delay:.28s}
 .nav nav a:hover{color:var(--primary)}
-.nav nav .pill{margin-top:1.5rem;background:var(--primary);color:var(--on-primary);padding:.95rem 2rem;border-radius:30px;border:var(--line);font-weight:700;font-size:1rem}
+.nav nav a.pill{margin-top:1.5rem;background:var(--primary);color:var(--on-primary);padding:.95rem 2rem;border-radius:30px;border:var(--line);box-shadow:var(--lift);font-weight:700;font-size:1rem;letter-spacing:0}
+.nav nav a.pill:hover{color:var(--on-primary);background:var(--purple-hi)}
 
 /* ---------- Hero ---------- */
 .hero{position:relative;min-height:100svh;padding:8.5rem var(--side) 10rem;background:linear-gradient(180deg,#c9dafc 0%,#e4ecfd 62%,#d6ebcf 100%);display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;overflow:hidden}
@@ -67,7 +68,6 @@ h1 em{display:inline-block;font-size:1.12em;transform:rotate(-2deg)}
 .button{display:inline-flex;align-items:center;gap:.6rem;background:var(--primary);color:var(--on-primary);border:var(--line);border-radius:30px;padding:.9rem 1.8rem;font-weight:700;text-decoration:none;box-shadow:var(--lift);transition:transform var(--t) var(--bounce),background-color var(--t)}
 .button img{width:26px;height:26px;margin:-4px 0;padding:2px;background:var(--raised);border-radius:50%}
 a.button:hover{transform:translateY(-2px) scale(1.04);background:var(--purple-hi)}
-.button.soon{cursor:default}
 .soft-link{font-weight:700;color:var(--written);text-decoration:none;border-bottom:2px solid var(--written);padding-bottom:2px;transition:color .2s,border-color .2s}
 .soft-link:hover{color:var(--primary);border-color:var(--primary)}
 .meta{font-size:.78rem;margin:1.6rem 0 0;color:var(--muted)}
