@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chengel.bahadirsonmez.com/sitemap.xml

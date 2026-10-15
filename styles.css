@@ -1,0 +1,89 @@
+/* Chengel site: Chengel palette (docs/chengel-design/tokens.json), one monospace face, no third-party requests. */
+:root {
+  --paper: #ecf2fe;
+  --paper-raised: #f8faff;
+  --paper-sunken: #dde8fd;
+  --ink: #000131;
+  --ink-muted: #41436b;
+  --primary: #44086a;
+  --on-primary: #f6effc;
+  --written: #2552c8;
+  --line: rgba(0, 1, 49, 0.18);
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #000131;
+    --paper-raised: #10073b;
+    --paper-sunken: #00001c;
+    --ink: #edf2fe;
+    --ink-muted: #b7c0e2;
+    --primary: #cfa8f6;
+    --on-primary: #000131;
+    --written: #94b7f8;
+    --line: rgba(237, 242, 254, 0.2);
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 16px/1.65 var(--mono);
+}
+a { color: var(--written); text-underline-offset: 3px; }
+a:hover { color: var(--primary); }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 16px; background: var(--paper-raised); padding: 8px 12px; z-index: 10; }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+header.nav {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-raised);
+}
+header.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: -0.01em; }
+.brand img { border-radius: 9px; }
+nav a { margin-left: 18px; color: var(--ink-muted); text-decoration: none; font-size: 14px; }
+nav a:hover { color: var(--primary); }
+
+h1, h2, h3 { line-height: 1.25; letter-spacing: -0.02em; }
+h1 { font-size: clamp(28px, 6vw, 42px); margin: 0 0 16px; }
+h2 { font-size: 22px; margin: 44px 0 10px; padding-top: 20px; border-top: 1px solid var(--line); }
+h3 { font-size: 16px; margin: 26px 0 6px; color: var(--primary); }
+p, li { color: var(--ink); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+
+.hero { padding: 64px 0 40px; }
+.eyebrow { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-muted); margin: 0 0 14px; }
+.lede { font-size: 18px; color: var(--ink-muted); max-width: 56ch; }
+.button {
+  display: inline-block; margin-top: 12px; padding: 12px 20px;
+  background: var(--primary); color: var(--on-primary); text-decoration: none; font-weight: 700;
+  border-radius: 10px;
+}
+.button:hover { color: var(--on-primary); filter: brightness(1.1); }
+
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin: 20px 0; }
+.card { background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+.card h3 { margin-top: 0; }
+.card p { margin: 0; color: var(--ink-muted); font-size: 15px; }
+
+.legal { padding: 48px 0 72px; }
+.legal .updated { color: var(--ink-muted); font-size: 14px; }
+.legal dt { font-weight: 700; margin-top: 12px; }
+.legal dd { margin: 2px 0 0 0; color: var(--ink-muted); }
+
+footer { border-top: 1px solid var(--line); background: var(--paper-raised); padding: 28px 0; font-size: 14px; color: var(--ink-muted); }
+footer a { margin-right: 18px; }
+footer p { margin: 10px 0 0; }
+
+@media (max-width: 520px) {
+  nav a { margin-left: 12px; }
+  body { font-size: 15px; }
+}
