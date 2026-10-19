@@ -181,7 +181,7 @@ footer p{margin:0}
 .prose h2{font-size:clamp(1.5rem,3.4vw,30px);letter-spacing:-.03em;margin:2.6rem 0 .6rem;padding-top:1.2rem;border-top:var(--line)}
 .prose h3{font-size:1.1rem;margin:1.6rem 0 .4rem;color:var(--primary)}
 .prose p,.prose li,.prose dd{color:var(--muted)}
-.prose a{color:var(--written)}
+.prose a{color:var(--written);overflow-wrap:anywhere}
 .prose ul{padding-left:22px}
 .prose li{margin:4px 0}
 .prose .updated{font-size:.9rem}
