@@ -68,6 +68,7 @@ h1 em{display:inline-block;font-size:1.12em;transform:rotate(-2deg)}
 .button{display:inline-flex;align-items:center;gap:.6rem;background:var(--primary);color:var(--on-primary);border:var(--line);border-radius:30px;padding:.9rem 1.8rem;font-weight:700;text-decoration:none;box-shadow:var(--lift);transition:transform var(--t) var(--bounce),background-color var(--t)}
 .button img{width:26px;height:26px;margin:-4px 0;padding:2px;background:var(--raised);border-radius:50%}
 a.button:hover{transform:translateY(-2px) scale(1.04);background:var(--purple-hi)}
+.button.soon{cursor:default}
 .soft-link{font-weight:700;color:var(--written);text-decoration:none;border-bottom:2px solid var(--written);padding-bottom:2px;transition:color .2s,border-color .2s}
 .soft-link:hover{color:var(--primary);border-color:var(--primary)}
 .meta{font-size:.78rem;margin:1.6rem 0 0;color:var(--muted)}
