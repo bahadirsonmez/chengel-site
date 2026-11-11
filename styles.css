@@ -169,6 +169,7 @@ a.button:hover{transform:translateY(-2px) scale(1.04);background:var(--purple-hi
 .support p{font-size:1.1rem;color:var(--muted)}
 .support .kicker{margin-bottom:1.2rem}
 .support .button{font-size:1.1rem}
+.support .support-follow{margin-top:-.8rem;font-size:1rem}
 .support-cengo{width:160px;height:auto;animation:bob 3s var(--ease) infinite alternate}
 
 footer{background:var(--ink);color:var(--on-primary);padding:2.6rem var(--side);display:grid;grid-template-columns:1fr auto;align-items:center;gap:1.25rem 2rem;font-size:.875rem}
@@ -178,6 +179,9 @@ footer>div{display:flex;gap:1.4rem;flex-wrap:wrap}
 footer a{text-decoration:none;border-bottom:2px solid var(--sky);transition:color .2s}
 footer a:hover{color:var(--gold)}
 footer p{margin:0}
+.follow{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .9rem}
+.follow a{display:inline-flex;align-items:center;gap:.4rem}
+.follow svg{flex:none}
 .more-apps{grid-column:1/-1}
 
 /* ---------- Legal pages and 404 ---------- */
